@@ -1,0 +1,30 @@
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+.contacts__item + .contacts__item {
+    margin-left: 50px;
+}
+.contacts__link {
+    display: flex;
+    align-items: center;
+
+    @extend %fonts-link;
+
+    color: $primary-text-color;
+
+
+    &:hover,
+    &:focus {
+        color: $accent-text-color;
+    }
+}
+
+.icon-mail {
+    margin-right: 10px;
+    fill: currentColor;
+}
+.icon-phone {
+    margin-right: 13px;
+    fill: currentColor;
+}

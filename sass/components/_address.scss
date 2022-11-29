@@ -1,0 +1,40 @@
+address {
+    margin-top: 20px;
+}
+
+.f-address {
+    margin-right: auto;
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+.f-address__link {
+    color: $white-text-color;
+
+    @extend %footer-address;
+
+    &:hover,
+    &:focus {
+     color: $accent-text-color; 
+    }
+}
+
+
+.f-address__contact {
+    color: $contacts-color;
+
+    @extend %footer-address;
+
+    &:hover,
+    &:focus {
+       color: $accent-text-color;
+    }
+}
+  
+
+
+
+  
+
