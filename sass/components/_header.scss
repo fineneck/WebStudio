@@ -1,10 +1,10 @@
 .header {
-    border-bottom: 1px solid #ececec;
+    border-bottom: $border #ececec;
   
     & .flex-container {
-    display: flex;
-    align-items: center;
- }
+     display: flex;
+     align-items: center;
+    }
 }
   
 .flex-cont {
@@ -13,12 +13,9 @@
 }
   
 .primary {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-  
+    @extend %logo;
+    
+    text-decoration: none;  
     color: $accent-text-color;
 }
 .logo-white {

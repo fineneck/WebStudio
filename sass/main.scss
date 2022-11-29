@@ -1,12 +1,13 @@
 //Utils styles
 @import './utils/variables';
+@import './utils/placeholders';
 @import './utils/visually-hidden';
 
 
 //Base styles
 @import './base/body';
 @import './base/reset';
-@import './base/container&section';
+@import './base/container';
 
 
 //Components styles

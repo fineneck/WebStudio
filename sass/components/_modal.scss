@@ -27,7 +27,7 @@
     margin-right: 8px;
   
     cursor: pointer;
-    border: 1px solid #0000001a;
+    border: $border #0000001a;
     border-radius: 50%;
     background-color: $white-text-color;
     transition: fill $animation, border $animation;

@@ -63,10 +63,7 @@ ul {
 
   /*outline: 1px solid tomato;*/
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 img {
   display: block;
   max-width: 100%;
@@ -434,6 +431,10 @@ form .button:focus {
 
 /*features*/
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .features {
   display: flex;
 }

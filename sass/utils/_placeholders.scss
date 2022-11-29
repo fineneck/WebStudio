@@ -1,0 +1,56 @@
+//fonts
+%logo {
+ font-family: Raleway, sans-serif;
+ font-weight: 700;
+ font-size: 26px;
+ line-height: 1.19;
+}
+%fonts-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color $animation;
+}
+%team {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+%footer-address {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition: color $animation;
+}
+
+
+//section
+%section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: $desctop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+
+@media screen and (min-width: $mobile) {
+}
+@media screen and (min-width: $tablet) {
+}
+@media screen and (min-width: $desctop) {
+}

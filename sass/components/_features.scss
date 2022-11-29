@@ -1,8 +1,15 @@
-.features {
-    display: flex;
+.section {
 
-    &__item:not(:last-child) {
-        margin-right: 30px;
+  @extend %section;  
+}
+
+.features { 
+
+    @media screen and (max-width: 767.98px) {
+
+        &__item:not(:last-child) {
+           margin-bottom: 30px;
+        } 
     }
 
     &__icons {
@@ -10,12 +17,12 @@
         align-items: center;
         justify-content: center;
       
-        width: 270px;
+        //width: 270px;
         height: 120px;
       
         margin-bottom: 30px;
-        border-radius: 4px;
-      
+        
+        border-radius: $border-radius;      
         background-color: $button-bg-color;
     }
 
@@ -29,9 +36,31 @@
     }
 
     &__text {
-        color: $primary-text-color;
+    
         font-size: 14px;
         line-height: 1.71;
+
+        color: $primary-text-color; 
+    }
+
+    
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        
+
+        &__item {
+            flex-basis: calc( 100% / 2);
+        }
+    }
+
+    @media screen and (min-width: $desctop) {
+        display: flex;
+
+        &__item:not(:last-child) {
+         margin-right: 30px;
+        } 
     }
 }
 
