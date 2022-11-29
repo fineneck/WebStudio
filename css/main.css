@@ -540,10 +540,10 @@ form .button:hover, form .button:focus {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 30px;
   }
   .features__item {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
