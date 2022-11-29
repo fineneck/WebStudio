@@ -724,15 +724,18 @@ form .button:hover, form .button:focus {
 .clients__link:hover .clients__logo, .clients__link:focus .clients__logo {
   fill: #2196f3;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
 @media screen and (min-width: 1200px) {
   .clients {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 30px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
