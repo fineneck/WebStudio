@@ -33,18 +33,18 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section {
+.section-clients, .section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
-  .section {
+  .section-clients, .section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section {
+  .section-clients, .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -668,21 +668,34 @@ form .button:hover, form .button:focus {
   background-color: #2196f3;
 }
 
-.section-clients {
-  padding-top: 94px;
-  padding-bottom: 91px;
+.title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+  }
 }
 
-.clients-list {
+.clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
 }
-
+.clients__item {
+  width: calc((100% - 30px) / 2);
+}
 .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -693,7 +706,6 @@ form .button:hover, form .button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -704,7 +716,6 @@ form .button:hover, form .button:focus {
   fill: #2196f3;
   border-color: #2196f3;
 }
-
 .clients__logo {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -712,6 +723,17 @@ form .button:hover, form .button:focus {
 }
 .clients__link:hover .clients__logo, .clients__link:focus .clients__logo {
   fill: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
 }
 
 .button-list {

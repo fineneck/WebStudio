@@ -1,36 +1,70 @@
 .section-clients {
-    padding-top: 94px;
-    padding-bottom: 91px;
+
+ @extend %section;
 }
-.clients-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-.clients__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 170px;
-    height: 92px;
+.title {
+    margin-bottom: 30px;
   
-    border: $border #afb1b8;
-    border-radius: $border-radius;
-    transition: fill $animation, border $animation;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
 
-    &:hover,
-    &:focus {
-     fill: $accent-text-color;
-     border-color: $accent-text-color;
-   }
+    @media screen and (min-width: $desctop) {
+        margin-bottom: 50px;
+  
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+    }
+}
+.clients {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+
+    &__item {
+        width: calc((100% - 30px) / 2);
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        height: 92px;
+      
+        border: $border #afb1b8;
+        border-radius: $border-radius;
+        transition: fill $animation, border $animation;
+    
+        &:hover,
+        &:focus {
+         fill: $accent-text-color;
+         border-color: $accent-text-color;
+       }
+    }
+
+    &__logo {
+        fill: $icons-color;
+        transition: fill $animation;
+    
+        .clients__link:hover &,
+        .clients__link:focus & {
+         fill: $accent-text-color;
+      }
+    }
+
+    @media screen and (min-width: $desctop) {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
 }
 
-.clients__logo {
-    fill: $icons-color;
-    transition: fill $animation;
 
-    .clients__link:hover &,
-    .clients__link:focus & {
-     fill: $accent-text-color;
-  }
-}
+

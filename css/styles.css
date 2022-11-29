@@ -578,9 +578,9 @@ form .button:focus {
 /*clients*/
 .section-clients {
   padding-top: 94px;
-  padding-bottom: 91px;
+  padding-bottom: 94px;
 }
-.clients-list {
+.clients {
   display: flex;
   justify-content: center;
   gap: 30px;
