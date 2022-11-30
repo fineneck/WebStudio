@@ -4,19 +4,38 @@
   
     background-color: $background-color;
 }
-.footer-contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.flex-container {
 
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+
+}
+.footer-contacts {
+
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+    }
+ 
+
+    @media screen and (min-width: $desctop) {
+        display: flex;
+        align-items: baseline;
+    }
 
 }
 .web-contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    margin-bottom: 60px;
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 60px;
+    }
     
 
     @media screen and (min-width: $desctop) {

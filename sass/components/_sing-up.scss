@@ -1,7 +1,11 @@
 .sing-up {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
 
 .sing-up__subtile--white {
@@ -10,10 +14,13 @@
     color: $white-text-color;
 }
 .form-foot {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 
     @media screen and (min-width: $desctop) {
         display: flex;
@@ -47,13 +54,13 @@
         line-height: 1.25;
         color: rgba(255, 255, 255, 0.6);
     }
-    
+
 
     @media screen and (min-width: $desctop) {
-        margin-right: 12px;    
+        margin-right: 12px; 
+        margin-bottom: 0;   
       
         width: 358px;
-        height: 50px;
     }
 }
 

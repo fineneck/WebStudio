@@ -1,9 +1,13 @@
 .social-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    margin-bottom: 60px;
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        margin-bottom: 60px;
+    }
+
 
     @media screen and (min-width: $desctop) {
         margin-right: 93px;

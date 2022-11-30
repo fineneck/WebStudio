@@ -3,13 +3,17 @@ address {
 }
 
 .f-address {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    &__item:not(:last-child) {
-        margin-bottom: 8px;
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__item:not(:last-child) {
+         margin-bottom: 8px;
+        }
     }
+
 
 
     @media screen and (min-width: $desctop) {

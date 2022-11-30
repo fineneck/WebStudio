@@ -740,16 +740,16 @@ form .button:focus {
 }
 
 /*address*/
-.f-address {
-  margin-right: auto;
-}
-
-.f-address__item:not(:last-child) {
-  margin-bottom: 9px;
-}
 address {
   margin-top: 20px;
 }
+.f-address {
+  margin-right: auto;
+}
+.f-address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .f-address__link {
   color: var(--white-text-color);
   text-decoration: none;
