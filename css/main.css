@@ -6,8 +6,6 @@
 }
 
 .contacts__link, .navigation__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -151,6 +149,8 @@ img {
 
 .navigation__link {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: #212121;
 }
 .navigation__link:hover, .navigation__link:focus {
@@ -177,15 +177,27 @@ img {
 }
 @media screen and (min-width: 768px) {
   .contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     margin-left: auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
-.contacts__item + .contacts__item {
-  margin-left: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item + .contacts__item {
+    margin-left: 50px;
+  }
 }
 
 .contacts__link {
@@ -199,6 +211,12 @@ img {
 }
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .icon-mail {

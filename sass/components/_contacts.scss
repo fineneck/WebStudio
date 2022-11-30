@@ -2,26 +2,46 @@
     display: none;
 
     @media screen and (min-width: $tablet) {
-        display: flex;
-        margin-left: auto;
+      display: block;
+      margin-left: auto;
     }
 
+    @media screen and (min-width: $desctop) {
+        display: flex;        
+    }
 }
-.contacts__item + .contacts__item {
-    margin-left: 50px;
+
+.contacts__item {
+
+   &:not(:last-child) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {        
+        margin-bottom: 10px;        
+    }
+   }
+
+    & + & {    
+        @media screen and (min-width: $desctop) {
+            margin-left: 50px;
+        }
+    }
 }
+
+    
 .contacts__link {
     display: flex;
     align-items: center;
 
-    @extend %fonts-link;
-
+    @extend %link-header ;
     color: $primary-text-color;
-
 
     &:hover,
     &:focus {
         color: $accent-text-color;
+    }
+
+    @media screen and (min-width: $desctop) {
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 

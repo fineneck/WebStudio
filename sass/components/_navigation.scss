@@ -12,8 +12,10 @@
 }
 .navigation__link {
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     
-    @extend %fonts-link;
+    @extend %link-header ;
 
     color: $title-text-color;
     
