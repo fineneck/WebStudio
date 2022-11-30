@@ -1,0 +1,139 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  padding: 48px 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: $white-text-color;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform $animation;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+
+    &:hover,
+    &:focus {
+      color: $accent-text-color;
+    }
+  
+}
+
+.mobile-nav {
+    margin-bottom: auto;  
+
+  &__item:not(:last-child){
+    margin-bottom:  32px;
+    }
+
+
+  &__link {
+    
+    
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+    text-decoration: none;
+
+
+    &.current {
+      color: $accent-text-color;
+    }
+  }
+}
+
+.mobile-cont {
+   margin-bottom: 64px;
+
+
+    &__item:not(:last-child){
+      margin-bottom:  32px;
+    }
+
+    &__link {
+        
+        
+    
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: $accent-text-color;
+        text-decoration: none;
+        
+    }
+    
+    &__link-mail {
+
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: $primary-text-color;        
+        text-decoration: none;
+    }
+      
+}
+
+.mobile-soc {
+    
+
+    &__link {        
+    
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: $accent-text-color;        
+        text-decoration: none;
+        
+    }
+}
+
+
+
+

@@ -1,6 +1,11 @@
 .navigation {
-    display: flex;
-    margin-left: 93px;
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        margin-left: 93px;
+    }
+
 }
 .navigation__item:not(:last-child) {
     margin-right: 50px;

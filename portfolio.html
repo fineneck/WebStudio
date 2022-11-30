@@ -63,13 +63,23 @@
             >
           </li>
         </ul>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+        <svg class="icon-menu" width="24" height="16">
+          <use href="./images/icons.svg#menu"></use>
+        </svg>
+        </button>
       </div>
     </header> -->
 
-    <main>
+    <!-- <main>
       <section class="section">
         <div class="container">
-          <h1 class="visually-hidden">#Портфоліо</h1>
+          <h1 class="visually-hidden">#Портфоліо</h1> -->
 
           <!--Buttons-->
           <!-- <ul class="button-list">
@@ -314,19 +324,19 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-contacts">
         <h2 id="Контакти" class="visually-hidden">Контакти</h2>
 
-       <div class="flex-container">
+       <div class="flex-container"> -->
         <!--logo-->
-        <div class="web-contacts">
+        <!-- <div class="web-contacts">
           <a href="./index.html" class="primary"
             >Web<span class="logo-black">Studio</span></a
-          >
+          > -->
 
           <!--address-->
-          <address>
+          <!-- <address>
             <ul class="f-address">
               <li class="f-address__item">
                 <a
@@ -349,10 +359,10 @@
               </li>
             </ul>
           </address> 
-        </div>
+        </div> -->
 
         <!--social links-->
-        <div class="social-links">
+        <!-- <div class="social-links">
           <h3 class="subtitle social-links__subtile--white">ПРИЄДНУЙТЕСЬ</h3>
           <ul class="social-list">
             <li class="social-list__item">
@@ -397,10 +407,10 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
 
         <!--sing up-->
-        <div class="sing-up">
+        <!-- <div class="sing-up">
           <h3 class="subtitle sing-up__subtile--white">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
           <div class="form-foot">
             <input type="email" name="email" placeholder="E-mail">
@@ -410,8 +420,32 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <script src="./js/modal.js"></script>
+
+      <!--Mobile menu-->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="icon-close_menu" width="24" height="16">
+            <use href="./images/icons.svg#close_menu"></use>
+          </svg>
+        </button>
+  
+        <ul class="mobile-menu">
+          <li><a href="" class="link">About</a></li>
+          <li><a href="" class="link">Products</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+          <li><a href="" class="link">Career</a></li>
+        </ul>
+      </div>
+  
+      <script src="./js/modal.js"></script>
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
