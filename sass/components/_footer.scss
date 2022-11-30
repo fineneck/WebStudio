@@ -6,14 +6,27 @@
 }
 .footer-contacts {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+
+
 }
 .web-contacts {
-    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 60px;
+    
+
+    @media screen and (min-width: $desctop) {
+        margin-right: 70px;
+    }
+
 }
 .logo-black {    
-    @extend %logo;
 
-    letter-spacing: 0.03em;
+    @extend %logo;
+    
     color: $white-text-color;   
 }

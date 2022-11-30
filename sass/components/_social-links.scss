@@ -1,9 +1,22 @@
 .social-links {
-    margin-right: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 60px;
+
+    @media screen and (min-width: $desctop) {
+        margin-right: 93px;
+    }
+    
 
     &__subtile--white {
         margin-bottom: 20px;
       
         color: $white-text-color;
     }
+}
+
+.social-list__link {
+    fill: $white-text-color;
 }

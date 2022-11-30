@@ -15,8 +15,6 @@
         margin-bottom: 40px;
     }
 
-
-
     @media screen and (min-width: $tablet) {
         display: flex;
         justify-content: center;
@@ -28,14 +26,10 @@
         }
     }
 
-
     @media screen and (min-width: $desctop) {
     
         margin-bottom: 50px;
     }
-
-
-
 }
 
 .button-list__buttons {
@@ -48,7 +42,7 @@
     line-height: 1.63;
     cursor: pointer;
     border-color: transparent;
-    border-radius: 4px;
+    border-radius: $border-radius;
     color: $title-text-color;
     background-color: $button-bg-color;
     transition: background-color $animation, color $animation,

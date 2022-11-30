@@ -3,11 +3,23 @@ address {
 }
 
 .f-address {
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__item:not(:last-child) {
-        margin-bottom: 9px;
+        margin-bottom: 8px;
     }
+
+
+    @media screen and (min-width: $desctop) {
+        margin-right: auto;
+
+        &__item:not(:last-child) {
+         margin-bottom: 9px;
+        }
+    }
+
 }
 
 .f-address__link {
