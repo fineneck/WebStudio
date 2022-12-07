@@ -40,9 +40,9 @@
 }
 
 
-@media screen and (min-width: $mobile) {
+@media screen and (min-width: $mobile) and (max-width: 767px) {
 }
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
 }
 @media screen and (min-width: $desctop) {
 }
