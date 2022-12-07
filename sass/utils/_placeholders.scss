@@ -40,9 +40,19 @@
 }
 
 
-@media screen and (min-width: $mobile) and (max-width: 767px) {
+@media screen and (min-width: $mobile) and (max-width: 767.98px) {
 }
 @media screen and (min-width: $tablet) and (max-width: 1199px) {
 }
 @media screen and (min-width: $desctop) {
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+}
+@media screen and (min-device-pixel-ratio: 3),
+   screen and (min-resolution: 288dpi),
+   screen and (min-resolution: 3dppx) {
+}
+

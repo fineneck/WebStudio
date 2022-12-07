@@ -6,7 +6,7 @@
 .button-list {
     display: flex;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
         flex-wrap: wrap;
         row-gap: 15px;
         column-gap: 8px;
