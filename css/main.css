@@ -230,8 +230,8 @@ img {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #c4c4c4;
   text-align: center;
   max-width: 1600px;
@@ -243,19 +243,31 @@ img {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero-title {
   margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 
 .button {
-  padding: 10px 32px;
+  padding: 10px 24px;
   text-align: center;
   letter-spacing: 0.06em;
   font-family: inherit;
@@ -276,6 +288,11 @@ img {
   background-color: #188ce8;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    padding: 10px 32px;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -994,8 +1011,8 @@ address {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  padding: 40px 39px 40px 41px;
+  width: 450px;
+  padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1004,6 +1021,12 @@ address {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    padding: 40px 39px 40px 41px;
+  }
 }
 
 .modal-button {
@@ -1037,10 +1060,16 @@ address {
 
 .modal-form {
   margin-bottom: 12px;
+  text-align: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.5;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    line-height: 1.2;
+  }
 }
 
 .form-field,
@@ -1159,10 +1188,16 @@ address {
           justify-content: center;
   margin-bottom: 30px;
   cursor: pointer;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .form-check {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .form-check input {
   position: absolute;
@@ -1201,6 +1236,8 @@ address {
 }
 
 form .button {
+  display: block;
+  margin: auto;
   padding: 10px 52px;
 }
 form .button:hover, form .button:focus {
