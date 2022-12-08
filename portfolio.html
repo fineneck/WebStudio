@@ -116,9 +116,18 @@
               <a href="" class="product-list__link">
                 <div class="product-thumb">
                   <img
-                    src="./images/img-1.jpg"
-                    alt="Команда веб розробників"
-                    width="370"
+                    srcset="
+                     ./images/products/s/img-1_450.jpg 450w,
+                     ./images/products/s/img-1_900.jpg 900w,
+                     ./images/products/m/img-1_354.jpg 354w,
+                     ./images/products/m/img-1_708.jpg 708w,
+                     ./images/products/l/img-1_370.jpg 370w,
+                     ./images/products/l/img-1_740.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/products/s/img-1_450.jpg"
+                    alt="Веб-розробники"
+                    width="450"
                     height="294"
                   />
                   <div class="product-thumb__descript">
