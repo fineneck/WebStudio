@@ -794,6 +794,13 @@ img {
         justify-content: space-around;
   }
 }
+@media screen and (min-width: 1200px) {
+  .flex-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 
 @media screen and (max-width: 1199px) {
   .footer-contacts {

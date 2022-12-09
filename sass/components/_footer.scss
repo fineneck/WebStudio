@@ -7,9 +7,13 @@
 .flex-container {
 
     @media screen and (min-width: $tablet) {
-        display: flex;
+        display: flex;   
         align-items: baseline;
         justify-content: space-around;
+    }
+
+    @media screen and (min-width: $desctop) {
+        justify-content: flex-start;
     }
 
 }
