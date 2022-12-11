@@ -39,6 +39,11 @@
         color: $accent-text-color;
     }
 
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+
     @media screen and (min-width: $desctop) {
         padding-top: 32px;
         padding-bottom: 32px;
